@@ -117,7 +117,7 @@ read() {	/* READ TOKEN */
 	if ((p=strchr(pun,*lp)) && lp++) { /* PUNCTUATION */
 		for (d=dub; *d && strncmp(d,lp-1,2); d+=2);
 		if (!*d) return tok=(p-pun)+LP;
-		return lp++, tok=(d-dub)+NE;
+		return lp++, tok=(d-dub)/2+NE;
 	} else if (isalpha(*lp)) {	/* IDENTIFIER */
 		for (p=tokn; isalnum(*lp); ) *p++=toupper(*lp++);
 		for (*p=0, k=kwd; *k && strcmp(tokn,*k); k++);
