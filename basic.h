@@ -68,7 +68,7 @@ SUBS_() { A-=B; sp++; STEP; };
 MUL_() { A*=B; sp++; STEP; };
 DIV_() { if (!B) sp+=2,err("DIVISION BY ZERO"); A/=B; sp++; STEP; };
 MOD_() { if (!B) sp+=2,err("MODULUS OF ZERO"); A%=B; sp++; STEP; };
-EQ_() { A=(A<B)? -1: 0; sp++; STEP; };
+EQ_() { A=(A==B)? -1: 0; sp++; STEP; };
 LT_() { A=(A<B)? -1: 0; sp++; STEP; };
 GT_() { A=(A>B)? -1: 0; sp++; STEP; };
 NE_() { A=(A!=B)? -1: 0; sp++; STEP; };
