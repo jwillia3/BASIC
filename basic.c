@@ -12,7 +12,7 @@ kwdhook_(char *msg) {
 
 main(int argc, char **argv) {
 	FILE *sf=stdin;
-	initbasic();
+	initbasic(0);
 	kwdhook=kwdhook_;
 	if (argv[1])
 		if (sf=fopen(argv[1],"r"))
