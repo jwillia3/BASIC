@@ -1,6 +1,13 @@
 			BASIC INTERPRETER
 			JERRY WILLIAMS JR
 
+Thank you for you interest in my little BASIC interpreter.
+Since a few people have asked, I've started including the license here in the repository.
+I have enjoyed hearing from people who find a use for this, so please do send me an e-mail if you feel so inclined.
+The license is the same as MIT with the paragraph removed:
+	The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+
 STATEMENTS:
 	#	COMMENT ...
 	>	EXPR
